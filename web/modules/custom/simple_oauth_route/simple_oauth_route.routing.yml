@@ -1,0 +1,22 @@
+oauth2_token.user_debug:
+  path: '/oauth/debug'
+  defaults:
+    _controller: 'Drupal\simple_oauth_route\Controller\DebugController::debug'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'
+    _format: 'json'
+  options:
+    _auth: ['oauth2']  # This enables the OAuth2 authentication provider for this route.
+    no_cache: TRUE
+
+oauth2_token.csrf_token:
+  path: '/oauth/csrf-token'
+  defaults:
+    _controller: 'Drupal\simple_oauth_route\Controller\CsrfTokenController::getToken'
+  methods: [GET]
+  requirements:
+    _access: 'TRUE'
+    _format: 'json'
+  options:
+    no_cache: TRUE

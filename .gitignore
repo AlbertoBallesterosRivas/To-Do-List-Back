@@ -1,0 +1,87 @@
+# Drupal-specific
+sites/*/files
+sites/*/private
+sites/*/settings*.php
+sites/*/services.yml
+sites/*/development.services.yml
+sites/simpletest
+
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings.local.php
+
+# Ignore local environment configuration.
+.env
+.env.local
+
+# Ignore Composer dependencies.
+/vendor
+/composer.lock
+
+# Ignore Drush-generated files.
+drush/sites
+/drush/local.env.php
+/drush/drush.yml
+
+# Ignore PHPStorm project files.
+/.idea
+
+# Ignore MacOS system files.
+.DS_Store
+
+# Ignore node.js dependencies.
+/node_modules
+
+# Ignore npm log files
+npm-debug.log
+
+# Ignore compiled assets (if you're using something like Gulp or Webpack).
+/public/css
+/public/js
+
+# Ignore backup and temporary files.
+*.bak
+*.backup
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ignore Sass cache.
+/.sass-cache
+
+# Ignore SQLite database files.
+*.sqlite
+
+# Ignore PHPUnit test results.
+phpunit.xml
+phpunit.xml.dist
+
+# Ignore generated files by EditorConfig or similar tools.
+*.editorconfig
+
+# Ignore Vagrant files.
+.vagrant/
+Vagrantfile
+
+# Ignore certain log files.
+*.log
+
+# Ignore coverage reports and other test-related output.
+/coverage/
+/tests/_output/
+
+# Ignore any IDE project settings, temp files, or metadata.
+.idea/
+.vscode/
+
+# Ignore npm/yarn lock files (if you prefer not to version them).
+package-lock.json
+yarn.lock
+
+# Ignore certain assets from frontend tools like Bower.
+bower_components/
+
+# Ignore translation export files.
+*.po
+*.pot
+

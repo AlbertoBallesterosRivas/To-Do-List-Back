@@ -1,0 +1,8 @@
+name: 'Simple OAuth Route'
+type: module
+description: 'Provides additional routes for debugging OAuth2.'
+package: Custom
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - simple_oauth:simple_oauth
+ 
